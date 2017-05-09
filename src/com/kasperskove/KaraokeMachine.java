@@ -7,6 +7,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class KaraokeMachine {
@@ -43,6 +44,8 @@ public class KaraokeMachine {
 
     public void run(){
         String choice = "";
+
+        // prompting for choice
         do {
             try {
                 choice = promptAction();
@@ -50,7 +53,7 @@ public class KaraokeMachine {
                     case "add":
                         Song song = promptNewSong();
                         mSongBook.addSong(song);
-                        System.out.printf("%s added %n%n%n", song);
+                        System.out.printf("%s added %n%n ", song);
                         break;
                     case "quit":
                         System.out.println("Thanks for playing");
@@ -74,5 +77,19 @@ public class KaraokeMachine {
         System.out.println("Enter the video URL:  ");
         String videoUrl = mReader.readLine();
         return new Song (artist, title, videoUrl);
+    }
+
+    private int promptForIndex(List<String> options) throws IOException {
+        int counter = 1;
+
+        for (String option : options) {
+            System.out.printf("%d.)  %s %n", counter, option);
+            counter++;
+        }
+
+        String optionAsString = mReader.readLine();
+        int choice = Integer.parseInt(optionAsString.trim());
+        System.out.printf("Your choice:    ");
+        return choice - 1;
     }
 }
