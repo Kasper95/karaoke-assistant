@@ -47,7 +47,10 @@ public class KaraokeMachine {
             try {
                 choice = promptAction();
                 switch (choice) {
-                    case "add": // TODO : ADD A NEW SONG
+                    case "add":
+                        Song song = promptNewSong();
+                        mSongBook.addSong(song);
+                        System.out.printf("%s added %n%n%n", song);
                         break;
                     case "quit":
                         System.out.println("Thanks for playing");

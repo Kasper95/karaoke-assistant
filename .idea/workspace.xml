@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ca8d5e39-47ae-40e4-aeb6-2ab30e7ca3b5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/kasperskove/KaraokeMachine.java" afterPath="$PROJECT_DIR$/src/com/kasperskove/KaraokeMachine.java" />
     </list>
     <ignored path="karaoke-assistant.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,8 +39,8 @@
       <file leaf-file-name="KaraokeMachine.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/kasperskove/KaraokeMachine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1080">
-              <caret line="72" column="50" selection-start-line="72" selection-start-column="50" selection-end-line="72" selection-end-column="50" />
+            <state relative-caret-position="105">
+              <caret line="52" column="65" selection-start-line="52" selection-start-column="65" selection-end-line="52" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -658,8 +659,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kasperskove/KaraokeMachine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="72" column="50" selection-start-line="72" selection-start-column="50" selection-end-line="72" selection-end-column="50" />
+        <state relative-caret-position="105">
+          <caret line="52" column="65" selection-start-line="52" selection-start-column="65" selection-end-line="52" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
