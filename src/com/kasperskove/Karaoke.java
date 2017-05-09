@@ -1,18 +1,21 @@
 package com.kasperskove;
 
-/**
- * Created by KASPER on 5/4/17.
- */
+import com.kasperskove.model.Song;
+import com.kasperskove.model.SongBook;
+
 public class Karaoke {
 
     public Karaoke() {
     }
 
-    public static void main(String[] var0) {
-        Song var1 = new Song("Michael Jackson", "Beat It", "https://www.youtube.com/watch?v=SaEC9i9QOvk");
-        SongBook var2 = new SongBook();
-        System.out.printf("Adding %s %n", new Object[]{var1});
-        var2.addSong(var1);
-        System.out.printf("There are %d songs. %n", new Object[]{Integer.valueOf(var2.getSongCount())});
+    public static void main(String[] args) {
+
+        SongBook songBook = new SongBook();
+
+        Song song = new Song ("Michael Jackson", "Beat it", "https://www.youtube.com/watch?v=Ym0hZG-zNOk");
+        songBook.addSong(song);
+        System.out.printf("adding %s %n", song);
+
+        System.out.printf("There are %d songs. %n", songBook.getSongCount());
     }
 }
